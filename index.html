@@ -2,73 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Royate Hill Community Orchard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Royate Hill Community Orchard - Community Permaculture in Easton, Bristol</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Royate Hill Community Orchard is a historic permaculture demonstration site in Easton, Bristol. Join our community, learn sustainable growing, and help preserve Bristol's fruit-growing heritage.">
+    <meta name="keywords" content="community orchard, permaculture, Bristol, Easton, volunteer, sustainable gardening, fruit trees, allotments, no-dig, community garden">
+    <meta name="author" content="Royate Hill Community Orchard">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Royate Hill Community Orchard">
+    <meta property="og:description" content="A historic community orchard in Easton, Bristol, featuring over 40 apple varieties and demonstrating permaculture principles.">
+    <meta property="og:image" content="images/orchard.jpeg">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Royate Hill Community Orchard">
+    <meta name="twitter:description" content="A historic community orchard in Easton, Bristol, featuring over 40 apple varieties and demonstrating permaculture principles.">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
         }
+        
         .hero {
             background-image: url('images/orchard.jpeg');
             background-size: cover;
             background-position: center;
-            height: 300px;
+            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #ffffff;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            position: relative;
         }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
         .hero h1 {
             font-size: 3em;
             margin: 0;
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+            text-align: center;
         }
+        
         .container {
             max-width: 800px;
             margin: auto;
             padding: 20px;
         }
+        
         section {
             margin-bottom: 40px;
         }
+        
         h2 {
             color: #2b593e;
+            font-size: 1.8em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
         }
+        
         ul {
             padding-left: 20px;
         }
+        
         li {
             margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #1a3a28;
+        }
+        
+        em {
+            font-style: italic;
+        }
+        
+        p {
+            margin-bottom: 1em;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                height: 250px;
+            }
+            
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                height: 200px;
+            }
+            
+            .hero h1 {
+                font-size: 1.5em;
+            }
+        }
+        
+        /* Focus styles for accessibility */
+        a:focus {
+            outline: 2px solid #2b593e;
+            outline-offset: 2px;
+        }
+        
+        /* Print styles */
+        @media print {
+            .hero {
+                height: auto;
+                padding: 20px;
+                background: #2b593e;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.5;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="hero">
+    <header class="hero" role="banner">
         <h1>Royate Hill Community Orchard</h1>
-    </div>
-    <div class="container">
+    </header>
+    <main class="container" role="main">
         <!-- Our Story -->
-        <section>
-            <h2>Our Story</h2>
+        <section id="our-story" aria-labelledby="story-heading">
+            <h2 id="story-heading">Our Story</h2>
             <p>Royate Hill Community Orchard occupies a historic strip of allotments in Easton, Bristol.  Long before the motorway roared overhead this hillside supplied milk and fruit to Bristol’s markets: maps from the 1600s describe the area as dairy and fruit‑growing land.  By the early 1800s a brickworks quarried the heavy clay and Easton was built from its bricks.  Once the clay was exhausted the sloping site – too steep for housing – was turned into allotments for industrial workers.  Allotments were a public health measure; fresh fruit and veg helped combat diseases such as scurvy and rickets at a time when transport and wages made shop‑bought produce scarce.</p>
             <p>Over the centuries the tenancy rules banned perennial planting to stop allotment holders gaining long‑term rights.  When permaculture educator <strong>Mike Feingold</strong> took on plots here in the 1990s he found derelict beds and arcane contracts that began “thou shalt not…”.  The council was trying to sell the allotments for housing, valuing them at around £3.5&nbsp;million.  Mike’s response was guerrilla permaculture: he secretly planted fruit trees to prove the plots were in use and organised a campaign to get 80 per cent of the allotments rented and cultivated.  With support from the Kebele permaculture group he negotiated permission for fruit trees and even Bristol’s second ever compost toilet on an allotment.  His small acts of civil disobedience saved the site and laid the foundations for a community orchard.</p>
             <p>Today the orchard hosts over 40 varieties of apples plus pears, plums, cherries and nuts.  Mike has terraced the south‑facing slope into wide mounded beds that maximise sun exposure and harvesting, demonstrating <em>no‑dig</em> cultivation: paths are dug out and their soil piled onto beds, giving double‑depth topsoil and reducing compaction.  There are edible weeds and medicinal perennials, espaliered and cordon fruit trees, and grafted trees on different rootstocks to suit the microclimate.  A compost loo, willow coppice, medicinal herb bed and children’s play spaces make the orchard family‑friendly.</p>
         </section>
 
         <!-- Mike’s Welcome -->
-        <section>
-            <h2>A Welcome from Mike</h2>
+        <section id="welcome" aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">A Welcome from Mike</h2>
             <p>For Mike the allotment is “my playpen and my sanity” as well as a larder.  He describes sitting under a tree watching bees on comfrey flowers, listening to birds in the teasel and feeling transported to Planet Zog.  His priority is enjoyment: rather than ticking off a list of jobs he potters, experiments and learns.  The orchard is a living classroom where you can see grafting, rootstocks and perennial vegetables in action.  Mike grows unusual plants such as perennial kales, sea kale, tree fennel, wasabi‑flavoured <em>tandabala</em> and edible honeysuckle alongside native herbs and flowers.  Many so‑called weeds are encouraged for their food value, wildlife benefits or deep‑rooted nutrient cycling.</p>
             <p>Children and families are central to his vision.  He’s run birthday parties where kids dig potatoes, pick fruit and cook over a fire, and he designed the beds so young children can balance and play along their edges without trampling crops.  The site’s compost toilet and willow structures were installed to make it welcoming.  Mike also recovers tonnes of shop “waste” food to feed chickens and volunteers – a practical demonstration of permaculture ethics.</p>
         </section>
 
         <!-- Permaculture & Diversity -->
-        <section>
-            <h2>Permaculture &amp; Diversity</h2>
+        <section id="permaculture" aria-labelledby="permaculture-heading">
+            <h2 id="permaculture-heading">Permaculture &amp; Diversity</h2>
             <p>The orchard is a working demonstration of permaculture: design for minimal effort and maximum yield.  Some highlights:</p>
             <ul>
                 <li><strong>No‑dig mounds:</strong> Beds are raised with excavated path soil, reducing compaction and increasing surface area for planting.</li>
@@ -81,8 +187,8 @@
         </section>
 
         <!-- Getting Involved -->
-        <section>
-            <h2>Get Involved</h2>
+        <section id="get-involved" aria-labelledby="involved-heading">
+            <h2 id="involved-heading">Get Involved</h2>
             <p>We’re looking for more volunteers to help sustain and grow this unique project.  Whether you want to learn permaculture techniques, help host community events or apply your organisational skills, there’s a role for you.  No experience is necessary – you’ll learn by doing alongside experienced gardeners.</p>
             <ul>
                 <li><strong>Work days:</strong> On Saturdays we prune, graft, mulch, mow, plant, compost, mend paths, clear bindweed and extract perennial roots.  Tools and guidance provided.</li>
@@ -95,17 +201,22 @@
         </section>
 
         <!-- Looking Ahead -->
-        <section>
-            <h2>Looking Ahead</h2>
+        <section id="future" aria-labelledby="future-heading">
+            <h2 id="future-heading">Looking Ahead</h2>
             <p>Mike intends to hand over stewardship within the next year or so.  To ensure continuity we’re forming a committee and drafting a constitution.  We’re exploring legal structures – from an unincorporated association to a community interest company – to protect volunteers from liability and enable fundraising.  A working group is documenting tasks, from allotment maintenance to event organisation, so knowledge isn’t lost.</p>
             <p>Your involvement is critical.  By sharing skills, time and ideas we can keep Royate Hill Community Orchard open to all, honouring its history while evolving for the future.</p>
         </section>
 
         <!-- Visit Us -->
-        <section>
-            <h2>Visit Us</h2>
+        <section id="visit" aria-labelledby="visit-heading">
+            <h2 id="visit-heading">Visit Us</h2>
             <p>The orchard is nestled under the viaduct just off Royate Hill on the Coombe Brook allotment site in Easton.  Follow the lane opposite East Park Trading Estate and look for our posters in the M32 underpass and local noticeboards.  Bring waterproof boots, curiosity and maybe a picnic; there’s always something interesting to see, smell or taste.</p>
         </section>
-    </div>
+    </main>
+    
+    <footer role="contentinfo" style="background-color: #2b593e; color: white; padding: 20px; text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 Royate Hill Community Orchard. Open source website licensed under MIT License.</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Preserving Bristol's permaculture heritage while building a sustainable community future.</p>
+    </footer>
 </body>
 </html>
