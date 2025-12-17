@@ -59,6 +59,14 @@ npx http-server
 
 Then visit `http://localhost:8000` in your browser.
 
+## Deployment
+
+When deploying this website to a production server:
+
+1. Update the Open Graph image URL in `index.html` to use the full URL (e.g., `https://yourdomain.com/images/orchard.jpeg`) for proper social media sharing
+2. Consider adding a PNG version of the favicon for better compatibility with older browsers
+3. Configure proper MIME types for SVG files on your web server
+
 ## Contributing
 
 We welcome contributions to improve the website! Here's how you can help:
