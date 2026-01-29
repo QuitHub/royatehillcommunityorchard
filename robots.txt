@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://quithub.github.io/royatehillcommunityorchard/sitemap.xml
